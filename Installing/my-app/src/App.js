@@ -11,6 +11,9 @@ import Radio from './task/radio/Radio.jsx'
 import DefaultValue from './task/defaultValue/DefaultValue.jsx'
 import BindingInputs from './task/BindingInputsToArray/BindingInputs.jsx'
 import BindingInputsToObject from './task/BindingInputsToObject/BindingInputsToObject.jsx'
+import ReactiveAddition from './task/Reactive-addition/ReactiveAddition.jsx'
+import ReactiveChange from './task/Reactive-addition/ReactiveChange.jsx'
+import ReactiveArrayOfObject from './task/Reactive-addition/ReactiveArrayOfObject.jsx'
 
 function App() {
 	return (
@@ -27,6 +30,9 @@ function App() {
 			<DefaultValue />
 			<BindingInputs />
 			<BindingInputsToObject />
+			<ReactiveAddition />
+			<ReactiveChange />
+			<ReactiveArrayOfObject />
 		</div>
 	)
 }
