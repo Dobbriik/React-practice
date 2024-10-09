@@ -5,15 +5,17 @@ import App3 from './task/AppTask/App3.jsx'
 import App4 from './task/AppTask/App4.jsx'
 import App5 from './task/AppTask/App5.jsx'
 import App6 from './task/AppTask/App6.jsx'
-import Select from './task/select/Select.jsx'
-import Select2 from './task/select/Select2.jsx'
-import Radio from './task/radio/Radio.jsx'
-import DefaultValue from './task/defaultValue/DefaultValue.jsx'
-import BindingInputs from './task/BindingInputsToArray/BindingInputs.jsx'
-import BindingInputsToObject from './task/BindingInputsToObject/BindingInputsToObject.jsx'
-import ReactiveAddition from './task/Reactive-addition/ReactiveAddition.jsx'
-import ReactiveChange from './task/Reactive-addition/ReactiveChange.jsx'
-import ReactiveArrayOfObject from './task/Reactive-addition/ReactiveArrayOfObject.jsx'
+import Select from './task/WorkWithForm/select/Select.jsx'
+import Select2 from './task/WorkWithForm/select/Select2.jsx'
+import Radio from './task/WorkWithForm/radio/Radio.jsx'
+import DefaultValue from './task/WorkWithForm/defaultValue/DefaultValue.jsx'
+import BindingInputs from './task/WorkWithForm/BindingInputsToArray/BindingInputs.jsx'
+import BindingInputsToObject from './task/WorkWithForm/BindingInputsToObject/BindingInputsToObject.jsx'
+import ReactiveAddition from './task/DataWork/ReactiveAddition.jsx'
+import ReactiveChange from './task/DataWork/ReactiveChange.jsx'
+import ReactiveArrayOfObject from './task/DataWork/ReactiveArrayOfObject.jsx'
+import ReactiveOperations from './task/DataWork/ReactiveOperations.jsx'
+import DataDisplay from './task/DataWork/DataDisplay.jsx'
 
 function App() {
 	return (
@@ -33,6 +35,8 @@ function App() {
 			<ReactiveAddition />
 			<ReactiveChange />
 			<ReactiveArrayOfObject />
+			<ReactiveOperations />
+			<DataDisplay />
 		</div>
 	)
 }

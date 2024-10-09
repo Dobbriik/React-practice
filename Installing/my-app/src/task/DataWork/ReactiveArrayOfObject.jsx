@@ -1,5 +1,5 @@
-import { useId, useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
+import { useState } from 'react'
+import { nanoid } from 'nanoid'
 
 //Сделайте кнопку, по нажатию на которую будет добавляться новый элемент в конец массива, тем самым добавляя новый li в конец тега ul.
 
@@ -29,7 +29,7 @@ const initNotes = [
 function ReactiveArrayOfObject() {
 	const [notes, setNotes] = useState(initNotes)
 	const [isInputs, setIsInputs] = useState({
-		id: uuidv4(),
+		id: nanoid(),
 		prop1: '',
 		prop2: '',
 		prop3: '',
@@ -84,7 +84,7 @@ function ReactiveArrayOfObject() {
 			className='border-2 border-black rounded-md  my-2 mr-2 rad'
 			onClick={() => {
 				setNotes(pref => {
-					return [...pref, ...[{ ...isInputs, ['id']: uuidv4() }]]
+					return [...pref, ...[{ ...isInputs, ['id']: nanoid() }]]
 				})
 				setIsInputs(pref => ({ ...pref, prop1: '', prop2: '', prop3: '' }))
 				console.log(notes)
