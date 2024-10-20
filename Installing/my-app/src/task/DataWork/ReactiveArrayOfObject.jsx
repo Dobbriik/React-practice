@@ -84,7 +84,9 @@ function ReactiveArrayOfObject() {
 			className='border-2 border-black rounded-md  my-2 mr-2 rad'
 			onClick={() => {
 				setNotes(pref => {
-					return [...pref, ...[{ ...isInputs, ['id']: nanoid() }]]
+					const copy = { ...isInputs }
+					isInputs.id = nanoid()
+					return [...pref, copy]
 				})
 				setIsInputs(pref => ({ ...pref, prop1: '', prop2: '', prop3: '' }))
 				console.log(notes)
