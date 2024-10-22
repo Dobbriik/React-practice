@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import ApiMemo from './ApiMemo/ApiMemo'
 
 function HooksUseMemo() {
 	const [number, setNumber] = useState(5)
@@ -19,6 +20,9 @@ function HooksUseMemo() {
 			</h1>
 			<button onClick={() => setNumber(number + 1)}>Увеличить число</button>
 			<button onClick={() => setIsGreen(!isGreen)}>Изменить цвет</button>
+
+			<br />
+			<ApiMemo />
 		</div>
 	)
 }

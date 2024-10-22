@@ -6,6 +6,7 @@ import DataWorks from './task/DataWork/index.jsx'
 import Context from './task/hooks/useContext/index.jsx'
 import RefComponent from './task/hooks/useRef/index.jsx'
 import HooksUseMemo from './task/hooks/useMemo/index.jsx'
+import CallbackComponent from './task/hooks/useCallback/index.jsx'
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 
 			<HooksUseMemo />
 
+			<CallbackComponent />
 			<br />
 		</div>
 	)
